@@ -30,15 +30,9 @@
 				"segment_type": "build",
 				"job_steps": [
 					{
-						"name": "Print Env",
-						"definition": "Print Environment",
-						"command": "printenv | sort",
-						"properties": null
-					},
-					{
 						"name": "Workspace",
 						"definition": "Default workspace",
-						"command": "echo 'Freeform build steps'",
+						"command": "python --version\npython test",
 						"properties": null
 					}
 				],
