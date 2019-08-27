@@ -32,7 +32,7 @@
 					{
 						"name": "Workspace",
 						"definition": "Default workspace",
-						"command": "python --version\npython test",
+						"command": "python --version\npython -m test",
 						"properties": null
 					}
 				],
