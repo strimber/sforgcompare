@@ -30,9 +30,15 @@
 				"segment_type": "build",
 				"job_steps": [
 					{
-						"name": "Workspace",
-						"definition": "Default workspace",
-						"command": "python --version\npython -m test",
+						"name": "Setup Virtual Env",
+						"definition": "Setup Virtual Env",
+						"command": "python3 -m venv venv\n. venv/bin/activate\npip install -r requirements.txt",
+						"properties": null
+					},
+					{
+						"name": "Run Tests",
+						"definition": "Run Tests",
+						"command": "python3 manage.py test",
 						"properties": null
 					}
 				],
